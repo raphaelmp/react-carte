@@ -8,8 +8,8 @@ class MapDisplay extends Component {
 
   render() {
     let elements = this.props.carte.layers.map(item => (
-      <g key={item.id}>
-        <path d={item.d} onClick={() => console.log(item.name)}></path>
+      <g key={item.id} className="departement">
+        <path className="departement" d={item.d} onMouseEnter={() => console.log(item.name)} fill="#225CB5"></path>
       </g>
     ))
 
