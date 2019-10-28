@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import franceDepartement from "./france-departments.json"
+import franceDepartement from "./france-regions-departements.json"
 import MapDisplay from "./MapDisplay"
 import './App.css'
 
