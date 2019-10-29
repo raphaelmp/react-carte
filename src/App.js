@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   handleHover(event, type) {
-    if (type == 'departement') {
+    if (type === 'departement') {
       this.setState({
         departementHover: event,
       })
