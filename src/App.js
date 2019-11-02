@@ -12,6 +12,7 @@ class App extends Component {
     }
 
     this.handleHover = this.handleHover.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleHover(event, type) {
@@ -26,10 +27,23 @@ class App extends Component {
     }
   }
 
+  handleClick(event, type) {
+    if (type === 'region') {
+      alert(event)
+    } else {
+    }
+  }
+
   render() {
     return(
       <div className="App">
-        <MapDisplay carte={franceDepartement} handleHover={this.handleHover}/>
+        <MapDisplay
+          width="400"
+          height="400"
+          carte={franceDepartement}
+          handleHover={this.handleHover}
+          handleClick={this.handleClick}
+        />
         <p>{this.state.regionHover ? `Région: ${this.state.regionHover}` : ''}</p>
         <p>{this.state.departementHover ? `Département: ${this.state.departementHover}` : ''}</p>
       </div>

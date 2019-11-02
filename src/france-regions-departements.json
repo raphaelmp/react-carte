@@ -1,6 +1,7 @@
 {
   "id": "france-regions-departments",
   "name": "France Régions et Départements",
+  "maplevel": "2",
   "viewBox": "0 0 612.3844 584.36005",
   "regions": [
     {
